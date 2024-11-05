@@ -32,9 +32,7 @@ JMP end_program ; Jump to the end of the program
 numbers_equal:
 ; If numbers are equal, display "Equal"
 MOV AH, 09h ; Function 09h of INT 21h prints a string
-Dimple Lakshmi Sindhuja Tallam
-AP22110011044
-CSE-F
+
 MOV DX, OFFSET msg_equal ; Load the offset of the "Equal" message into DX
 INT 21h ; Call DOS interrupt to print the message
 end_program:
@@ -67,9 +65,7 @@ JZ even_number ; If zero, it means the number is even
 MOV AH, 09h ; Function 09h of INT 21h prints a string
 MOV DX, OFFSET msg_odd ; Load the offset of the "Odd" message into DX
 INT 21h ; Call DOS interrupt to print the message
-Dimple Lakshmi Sindhuja Tallam
-AP22110011044
-CSE-F
+
 JMP end_program ; Jump to the end of the program
 even_number:
 ; If number is even, display "Even"
